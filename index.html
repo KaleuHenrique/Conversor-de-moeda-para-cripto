@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Criptomoedas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="layout">
+    <div class="container">
+      <h1>Moeda → Cripto</h1>
+
+      <form id="formConverter">
+        <div class="box">
+          <label>Valor</label>
+          <input type="number" id="valor" placeholder="Ex: 1000" required>
+        </div>
+
+        <div class="box">
+          <label>Moeda Fiat</label>
+          <select id="fiat" required>
+            <option value="brl">Real (BRL)</option>
+            <option value="usd">Dólar (USD)</option>
+            <option value="eur">Euro (EUR)</option>
+          </select>
+        </div>
+
+        <div class="box">
+          <label>Criptomoeda</label>
+          <div class="select-cripto">
+            <select id="cripto" required></select>
+            <div class="logo-wrap">
+              <img id="criptoLogo" alt="Logo da cripto" src="">
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" id="converter">Converter</button>
+      </form>
+
+      <div class="resultado">
+        <strong id="resultado">---</strong>
+        <div class="meta" id="ultimaAtualizacao">---</div>
+      </div>
+    </div>
+
+    <aside class="historico">
+      <div class="historico-top">
+        <h2>Histórico</h2>
+        <button type="button" class="btn-secundario" id="limparHistorico">Limpar</button>
+      </div>
+      <ul id="historicoLista" class="historico-lista"></ul>
+    </aside>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
