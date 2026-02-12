@@ -87,7 +87,7 @@ body {
   align-items: center;
   justify-items: center;
   gap: 10px;
-  margin: 0 auto;
+  margin: 10px auto 0;
 }
 
 .select-cripto select {
@@ -218,6 +218,11 @@ button:active {
 
 .btn-secundario:hover {
   background: rgba(255,255,255,0.2);
+}
+
+.btn-inverter {
+  width: 100%;
+  margin-bottom: 12px;
 }
 
 .historico-lista {
