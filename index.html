@@ -1,12 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conversor de Criptomoedas</title>
+  <title>Conversor Fiat -> Cripto</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<<<<<<< HEAD
   
   <div class="layout">
     <div class="container">
@@ -22,11 +23,37 @@
           <label id="labelFiat">Moeda Fiat</label>
           <select id="fiat" required>
             <option value="brl">Real (BRL)</option>
+=======
+  <main class="app">
+    <section>
+      <h1>Conversor Fiat -> Cripto</h1>
+      <p class="subtitle">Converta BRL, USD ou EUR para criptomoedas.</p>
+
+      <form id="converter-form">
+        <div class="field">
+          <label for="amount">Valor</label>
+          <input
+            id="amount"
+            name="amount"
+            type="number"
+            min="0.00000001"
+            step="any"
+            placeholder="Ex: 1000"
+            required
+          >
+        </div>
+
+        <div class="field">
+          <label for="fiat">Moeda Fiat</label>
+          <select id="fiat" name="fiat" required>
+            <option value="br1">Real (BRL)</option>
+>>>>>>> ba7c2a6 (refactor: reinicia projeto do zero com nova base)
             <option value="usd">Dólar (USD)</option>
             <option value="eur">Euro (EUR)</option>
           </select>
         </div>
 
+<<<<<<< HEAD
         <div class="box">
           <label id="labelCripto">Criptomoeda</label>
           <input type="text" id="buscaCripto" placeholder="Buscar cripto por nome ou símbolo">
@@ -40,22 +67,25 @@
 
         <button type="button" class="btn-secundario btn-inverter" id="inverterConversao">Inverter: Cripto → Moeda</button>
         <button type="submit" id="converter">Converter</button>
+=======
+        <div class="field">
+          <label for="crypto">Criptomoeda</label>
+          <select id="crypto" name="crypto" required>
+            <option value="">Selecione...</option>
+          </select>\
+        </div>
+
+        <button type="submit" id="convert-btn">Converter</button>
+>>>>>>> ba7c2a6 (refactor: reinicia projeto do zero com nova base)
       </form>
 
-      <div class="resultado">
-        <strong id="resultado">---</strong>
-        <div class="meta" id="ultimaAtualizacao">---</div>
-      </div>
-    </div>
-
-    <aside class="historico">
-      <div class="historico-top">
-        <h2>Histórico</h2>
-        <button type="button" class="btn-secundario" id="limparHistorico">Limpar</button>
-      </div>
-      <ul id="historicoLista" class="historico-lista"></ul>
-    </aside>
-  </div>
+      <section class="result" aria-live="polite">
+        <h2>Resultado</h2>
+        <p id="result-text">Preencha os campos e converta.</p>
+        <small id="result-meta">---</small>
+      </section>
+    </section>
+  </main>
 
   <script src="script.js" defer></script>
 </body>

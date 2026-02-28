@@ -1,13 +1,13 @@
-﻿/* Reset básico */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
+  font-family: Arial, sans-serif;
   min-height: 100vh;
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,11 +102,14 @@ body {
   border-radius: 50%;
   background: #fff;
   border: 1px solid rgba(255, 255, 255, 0.35);
+=======
+>>>>>>> ba7c2a6 (refactor: reinicia projeto do zero com nova base)
   display: grid;
   place-items: center;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  padding: 24px;
 }
 
+<<<<<<< HEAD
 #criptoLogo {
   width: 30px;
   height: 30px;
@@ -257,43 +260,8 @@ button:active {
 /* Placeholder centralizado e com cor */
 input::placeholder {
   color: #999;
+=======
+main {
+>>>>>>> ba7c2a6 (refactor: reinicia projeto do zero com nova base)
   text-align: center;
-}
-
-/* Responsivo para celular */
-@media (max-width: 480px) {
-  .layout {
-    grid-template-columns: 1fr;
-  }
-
-  .container {
-    padding: 22px;
-  }
-
-  .container h1 {
-    font-size: 1.5rem;
-  }
-
-  .box input,
-  .box select {
-    font-size: 0.95rem;
-  }
-
-  .logo-wrap {
-    width: 40px;
-    height: 40px;
-  }
-
-  #criptoLogo {
-    width: 26px;
-    height: 26px;
-  }
-
-  .resultado {
-    font-size: 1rem;
-  }
-
-  .historico {
-    order: 2;
-  }
 }

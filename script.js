@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', () => {
   const selectCripto = document.getElementById('cripto');
   const selectFiat = document.getElementById('fiat');
@@ -434,3 +435,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+=======
+// Projeto reiniciado.
+console.log("Projeto reiniciado do zero.");
+>>>>>>> ba7c2a6 (refactor: reinicia projeto do zero com nova base)
