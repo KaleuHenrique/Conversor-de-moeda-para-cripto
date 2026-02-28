@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -7,25 +7,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<<<<<<< HEAD
-  
-  <div class="layout">
-    <div class="container">
-      <h1 id="tituloConversao">Moeda → Cripto</h1>
-
-      <form id="formConverter">
-        <div class="box">
-          <label id="labelValor">Valor</label>
-          <input type="number" id="valor" placeholder="Ex: 1000" required>
-        </div>
-
-        <div class="box">
-          <label id="labelFiat">Moeda Fiat</label>
-          <select id="fiat" required>
-            <option value="brl">Real (BRL)</option>
-=======
   <main class="app">
-    <section>
+    <section class="card">
       <h1>Conversor Fiat -> Cripto</h1>
       <p class="subtitle">Converta BRL, USD ou EUR para criptomoedas.</p>
 
@@ -46,37 +29,20 @@
         <div class="field">
           <label for="fiat">Moeda Fiat</label>
           <select id="fiat" name="fiat" required>
-            <option value="br1">Real (BRL)</option>
->>>>>>> ba7c2a6 (refactor: reinicia projeto do zero com nova base)
-            <option value="usd">Dólar (USD)</option>
+            <option value="brl">Real (BRL)</option>
+            <option value="usd">Dolar (USD)</option>
             <option value="eur">Euro (EUR)</option>
           </select>
         </div>
 
-<<<<<<< HEAD
-        <div class="box">
-          <label id="labelCripto">Criptomoeda</label>
-          <input type="text" id="buscaCripto" placeholder="Buscar cripto por nome ou símbolo">
-          <div class="select-cripto">
-            <select id="cripto" required></select>
-            <div class="logo-wrap">
-              <img id="criptoLogo" alt="Logo da cripto" src="">
-            </div>
-          </div>
-        </div>
-
-        <button type="button" class="btn-secundario btn-inverter" id="inverterConversao">Inverter: Cripto → Moeda</button>
-        <button type="submit" id="converter">Converter</button>
-=======
         <div class="field">
           <label for="crypto">Criptomoeda</label>
           <select id="crypto" name="crypto" required>
             <option value="">Selecione...</option>
-          </select>\
+          </select>
         </div>
 
         <button type="submit" id="convert-btn">Converter</button>
->>>>>>> ba7c2a6 (refactor: reinicia projeto do zero com nova base)
       </form>
 
       <section class="result" aria-live="polite">
